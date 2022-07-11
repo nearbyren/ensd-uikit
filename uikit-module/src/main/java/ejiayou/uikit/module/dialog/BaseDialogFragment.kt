@@ -144,7 +144,7 @@ abstract class BaseDialogFragment : AppCompatDialogFragment(), CoroutineScope by
     }
 
     open fun show(fragment: Fragment, tag: String? = null) {
-        showAllowStateLoss(fragment.parentFragmentManager, tag ?: this::javaClass.name)
+        showAllowStateLoss(fragment.childFragmentManager, tag ?: this::javaClass.name)
     }
 
     override fun onDestroy() {
