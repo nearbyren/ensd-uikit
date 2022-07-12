@@ -49,14 +49,13 @@ android {
 }
 
 dependencies {
-    api Testing.jUnit
-    api Testing.androidJunit
-    api Testing.espresso
-    api ThirdLib.KotlinStdlib.kotlin_stdlib
-    api AndroidX.Navigation.kot_cor_and
-    api AndroidX.Navigation.uiKtx
-    api AndroidX.lifecycle_runtime_ktx
-    api AndroidX.appcompat
-    api AndroidX.recyclerView
-    api AndroidX.databinding_runtime
+    testImplementation Testing.jUnit
+    androidTestImplementation Testing.androidJunit
+    androidTestImplementation Testing.espresso
+
+    implementation ThirdLib.KotlinStdlib.kotlinStdlib
+    implementation AndroidX.Navigation.kotCorAnd
+    implementation AndroidX.Navigation.uiKtx
+    implementation AndroidX.appcompat
+    implementation AndroidX.recyclerView
 }
