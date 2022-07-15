@@ -7,9 +7,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/11/9 6:14 PM
  * @description: 使用databinding的动态添加item的网格适配器
  * @since: 1.0.0
  */

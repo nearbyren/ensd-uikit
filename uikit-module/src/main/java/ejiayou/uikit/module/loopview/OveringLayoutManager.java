@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * Please make sure your child view have the same size.
  */
 @SuppressWarnings({"WeakerAccess", "unused", "SameParameterValue"})
-public class OverFlyingLayoutManager extends RecyclerView.LayoutManager implements RecyclerView.SmoothScroller.ScrollVectorProvider, ILoopView {
+public class OveringLayoutManager extends RecyclerView.LayoutManager implements RecyclerView.SmoothScroller.ScrollVectorProvider, ILoopView {
     private float minScale = 0.75f; // 两侧图片缩放比
     private float angle = 8f; // 翻转角度
     private int itemSpace = 385;
@@ -171,7 +171,7 @@ public class OverFlyingLayoutManager extends RecyclerView.LayoutManager implemen
     /**
      * Creates a horizontal ViewPagerLayoutManager
      */
-    public OverFlyingLayoutManager(Context context) {
+    public OveringLayoutManager(Context context) {
         this(HORIZONTAL, false);
     }
 
@@ -179,7 +179,7 @@ public class OverFlyingLayoutManager extends RecyclerView.LayoutManager implemen
      * @param orientation   Layout orientation. Should be {@link #HORIZONTAL} or {@link #VERTICAL}
      * @param reverseLayout When set to true, layouts from end to start
      */
-    public OverFlyingLayoutManager(int orientation, boolean reverseLayout) {
+    public OveringLayoutManager(int orientation, boolean reverseLayout) {
         setOrientation(orientation);
         setReverseLayout(reverseLayout);
         setAutoMeasureEnabled(true);
@@ -187,7 +187,7 @@ public class OverFlyingLayoutManager extends RecyclerView.LayoutManager implemen
         setIntegerDy(true);
     }
 
-    public OverFlyingLayoutManager(float minScale, int itemSpace, int orientation) {
+    public OveringLayoutManager(float minScale, int itemSpace, int orientation) {
         this(orientation, false);
         this.minScale = minScale;
         this.itemSpace = itemSpace;

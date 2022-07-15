@@ -10,9 +10,6 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/16 10:01 下午
  * @description: 感知Activity生命周期变化的Dialog
  * @since: 1.0.0
  */

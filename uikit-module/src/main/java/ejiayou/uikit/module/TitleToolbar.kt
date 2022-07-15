@@ -18,9 +18,6 @@ import androidx.annotation.StringRes
 import androidx.appcompat.widget.Toolbar
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/9/2 4:16 下午
  * @description: 自定义Toolbar
  * @since: 1.0.0
  */
@@ -111,85 +108,85 @@ open class TitleToolbar : Toolbar {
     @SuppressLint("CustomViewStyleable")
     private fun initAttr(attrs: AttributeSet?) {
         if (attrs != null) {
-            val ta = context.obtainStyledAttributes(attrs, R.styleable.fly_uikit_TitleBar)
+            val ta = context.obtainStyledAttributes(attrs, R.styleable.lib_uikit_TitleBar)
             // 标题
-            title = ta.getString(R.styleable.fly_uikit_TitleBar_fu_title) ?: ""
-            titleColor = ta.getColor(R.styleable.fly_uikit_TitleBar_fu_titleColor, titleColor)
-            titleSize = ta.getDimension(R.styleable.fly_uikit_TitleBar_fu_titleSize, titleSize)
-            titleBold = ta.getBoolean(R.styleable.fly_uikit_TitleBar_fu_titleBold, titleBold)
+            title = ta.getString(R.styleable.lib_uikit_TitleBar_fu_title) ?: ""
+            titleColor = ta.getColor(R.styleable.lib_uikit_TitleBar_fu_titleColor, titleColor)
+            titleSize = ta.getDimension(R.styleable.lib_uikit_TitleBar_fu_titleSize, titleSize)
+            titleBold = ta.getBoolean(R.styleable.lib_uikit_TitleBar_fu_titleBold, titleBold)
 
             // 左侧功能区
             leftPaddingL = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_leftPaddingL,
+                R.styleable.lib_uikit_TitleBar_fu_leftPaddingL,
                 leftPaddingL.toFloat()
             ).toInt()
             leftPaddingR = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_leftPaddingR,
+                R.styleable.lib_uikit_TitleBar_fu_leftPaddingR,
                 leftPaddingR.toFloat()
             ).toInt()
-            leftIcon = ta.getDrawable(R.styleable.fly_uikit_TitleBar_fu_leftIcon)
+            leftIcon = ta.getDrawable(R.styleable.lib_uikit_TitleBar_fu_leftIcon)
             leftIconWidth = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_leftIconWidth,
+                R.styleable.lib_uikit_TitleBar_fu_leftIconWidth,
                 leftIconHeight.toFloat()
             ).toInt()
             leftIconHeight = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_leftIconHeight,
+                R.styleable.lib_uikit_TitleBar_fu_leftIconHeight,
                 leftIconHeight.toFloat()
             ).toInt()
-            leftText = ta.getString(R.styleable.fly_uikit_TitleBar_fu_leftText) ?: ""
+            leftText = ta.getString(R.styleable.lib_uikit_TitleBar_fu_leftText) ?: ""
             leftTextSize =
-                ta.getDimension(R.styleable.fly_uikit_TitleBar_fu_leftTextSize, leftTextSize)
+                ta.getDimension(R.styleable.lib_uikit_TitleBar_fu_leftTextSize, leftTextSize)
             leftTextColor =
-                ta.getColor(R.styleable.fly_uikit_TitleBar_fu_leftTextColor, leftTextColor)
+                ta.getColor(R.styleable.lib_uikit_TitleBar_fu_leftTextColor, leftTextColor)
             leftTextLeftMargin = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_leftTextLeftMargin,
+                R.styleable.lib_uikit_TitleBar_fu_leftTextLeftMargin,
                 leftTextLeftMargin.toFloat()
             ).toInt()
 
             // 右侧功能区
             rightPaddingL = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_rightPaddingL,
+                R.styleable.lib_uikit_TitleBar_fu_rightPaddingL,
                 rightPaddingL.toFloat()
             ).toInt()
             rightPaddingR = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_rightPaddingR,
+                R.styleable.lib_uikit_TitleBar_fu_rightPaddingR,
                 rightPaddingR.toFloat()
             ).toInt()
-            rightIcon = ta.getDrawable(R.styleable.fly_uikit_TitleBar_fu_rightIcon)
+            rightIcon = ta.getDrawable(R.styleable.lib_uikit_TitleBar_fu_rightIcon)
             rightIconWidth = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_rightIconWidth,
+                R.styleable.lib_uikit_TitleBar_fu_rightIconWidth,
                 rightIconWidth.toFloat()
             ).toInt()
             rightIconHeight = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_rightIconHight,
+                R.styleable.lib_uikit_TitleBar_fu_rightIconHight,
                 rightIconHeight.toFloat()
             ).toInt()
-            rightText = ta.getString(R.styleable.fly_uikit_TitleBar_fu_rightText) ?: ""
+            rightText = ta.getString(R.styleable.lib_uikit_TitleBar_fu_rightText) ?: ""
             rightTextSize = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_rightTextSize,
+                R.styleable.lib_uikit_TitleBar_fu_rightTextSize,
                 rightTextSize
             )
             rightTextColor =
-                ta.getColor(R.styleable.fly_uikit_TitleBar_fu_rightTextColor, rightTextColor)
+                ta.getColor(R.styleable.lib_uikit_TitleBar_fu_rightTextColor, rightTextColor)
             rightTextLeftMargin = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_rightTextLeftMargin,
+                R.styleable.lib_uikit_TitleBar_fu_rightTextLeftMargin,
                 rightTextLeftMargin.toFloat()
             ).toInt()
 
             // 分割线
             dividerHeight = ta.getDimension(
-                R.styleable.fly_uikit_TitleBar_fu_dividerHeight,
+                R.styleable.lib_uikit_TitleBar_fu_dividerHeight,
                 dividerHeight.toFloat()
             ).toInt()
             dividerColor =
-                ta.getColor(R.styleable.fly_uikit_TitleBar_fu_dividerColor, dividerColor)
+                ta.getColor(R.styleable.lib_uikit_TitleBar_fu_dividerColor, dividerColor)
 
             // 其他属性
             barHeight =
-                ta.getDimension(R.styleable.fly_uikit_TitleBar_fu_barHeight, barHeight.toFloat())
+                ta.getDimension(R.styleable.lib_uikit_TitleBar_fu_barHeight, barHeight.toFloat())
                     .toInt()
             addStatusBarHeight =
-                ta.getBoolean(R.styleable.fly_uikit_TitleBar_fu_addStatusBarHeight, false)
+                ta.getBoolean(R.styleable.lib_uikit_TitleBar_fu_addStatusBarHeight, false)
             if (addStatusBarHeight) {
                 setPadding(
                     paddingLeft,

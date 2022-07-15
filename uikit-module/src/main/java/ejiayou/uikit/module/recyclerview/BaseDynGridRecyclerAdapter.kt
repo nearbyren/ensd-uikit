@@ -6,9 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/11/7 10:27 PM
  * @description: 动态添加item的网格适配器
  * @since: 1.0.0
  */

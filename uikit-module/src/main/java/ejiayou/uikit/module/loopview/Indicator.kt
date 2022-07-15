@@ -13,9 +13,6 @@ import androidx.annotation.RequiresApi
 import ejiayou.uikit.module.R
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/13 3:48 下午
  * @description: Banner的指示器
  * @since: 1.0.0
  */
@@ -94,18 +91,18 @@ open class Indicator : View {
     @SuppressLint("CustomViewStyleable")
     private fun init(attrs: AttributeSet?) {
         attrs?.let {
-            val typedArray = context.obtainStyledAttributes(attrs, R.styleable.fly_uikit_Indicator)
+            val typedArray = context.obtainStyledAttributes(attrs, R.styleable.lib_uikit_Indicator)
             activeColor =
-                typedArray.getColor(R.styleable.fly_uikit_Indicator_fu_activeColor, activeColor)
+                typedArray.getColor(R.styleable.lib_uikit_Indicator_fu_activeColor, activeColor)
             inactiveColor = typedArray.getColor(
-                R.styleable.fly_uikit_Indicator_fu_inactiveColor,
+                R.styleable.lib_uikit_Indicator_fu_inactiveColor,
                 inactiveColor
             )
             inactiveScale = typedArray.getFloat(
-                R.styleable.fly_uikit_Indicator_fu_inactiveScale,
+                R.styleable.lib_uikit_Indicator_fu_inactiveScale,
                 inactiveScale
             )
-            gap = typedArray.getDimension(R.styleable.fly_uikit_Indicator_fu_gap, gap)
+            gap = typedArray.getDimension(R.styleable.lib_uikit_Indicator_fu_gap, gap)
             typedArray.recycle()
         }
         paint.style = Paint.Style.FILL

@@ -8,9 +8,6 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/13 12:55 下午
  * @description: 对Recyclerview的扩展
  * @since: 1.0.0
  */

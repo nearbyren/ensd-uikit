@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--通用Dialog-->
-    <style name="fly_uikit_CommonDialog" parent="@android:style/Theme.Dialog">
+    <style name="lib_uikit_CommonDialog" parent="@android:style/Theme.Dialog">
         <!--是否去除标题 -->
         <item name="android:windowNoTitle">true</item>
         <!--是否去除边框-->
@@ -21,15 +21,15 @@
     </style>
 
     <!--通用的背景透明Dialog-->
-    <style name="fly_uikit_TransparentDialog" parent="fly_uikit_CommonDialog">
+    <style name="lib_uikit_TransparentDialog" parent="lib_uikit_CommonDialog">
         <!--弹窗背景是否变暗-->
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
 
     <!--从底部弹出动画-->
-    <style name="fly_uikit_anim_InBottom_OutBottom">
-        <item name="android:windowEnterAnimation">@anim/fly_uikit_bottom_popup_in</item>
-        <item name="android:windowExitAnimation">@anim/fly_uikit_bottom_popup_out</item>
+    <style name="lib_uikit_anim_InBottom_OutBottom">
+        <item name="android:windowEnterAnimation">@anim/lib_uikit_bottom_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/lib_uikit_bottom_popup_out</item>
     </style>
 </resources>

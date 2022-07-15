@@ -11,9 +11,6 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/16 7:16 下午
  * @description: 感知Activity生命周期变化的PopupWindow，所有的popupWindow都应继承它，
  *               可以解决activity finish 但是popupWindow还在引发的问题
  * @since: 1.0.0

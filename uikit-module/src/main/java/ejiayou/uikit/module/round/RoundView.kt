@@ -7,9 +7,6 @@ import android.view.View
 import ejiayou.uikit.module.R
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/9/6 10:48 上午
  * @description: 圆角View
  * @since: 1.0.0
  */
@@ -41,7 +38,7 @@ open class RoundView : View, IRoundImpl {
     @SuppressLint("CustomViewStyleable")
     private fun initAttrs(attrs: AttributeSet?) {
         attrs?.let {
-            val ta = context.obtainStyledAttributes(attrs, R.styleable.fly_uikit_RoundView)
+            val ta = context.obtainStyledAttributes(attrs, R.styleable.lib_uikit_RoundView)
             initRoundAttrs(ta)
             ta.recycle()
         }

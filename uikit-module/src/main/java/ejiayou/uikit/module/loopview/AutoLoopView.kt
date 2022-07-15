@@ -8,9 +8,6 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/13 2:43 下午
  * @description: 无限滚动View，可以用来做Banner、公告等类似视图
  * @since: 1.0.0
  */
@@ -40,7 +37,7 @@ open class AutoLoopView : RecyclerView {
         listener: OnPageChangeListener? = null
     ) {
         setAdapter(adapter)
-        layoutManager = OverFlyingLayoutManager(
+        layoutManager = OveringLayoutManager(
             minScale,
             itemSpace,
             orientation

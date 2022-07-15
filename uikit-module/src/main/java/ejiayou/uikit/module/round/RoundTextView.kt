@@ -8,9 +8,6 @@ import androidx.appcompat.widget.AppCompatTextView
 import ejiayou.uikit.module.R
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/31 10:34 上午
  * @description: 圆角TextView
  * @since: 1.0.0
  */
@@ -46,14 +43,14 @@ open class RoundTextView : AppCompatTextView, IRoundImpl {
     @SuppressLint("CustomViewStyleable")
     private fun initAttrs(attrs: AttributeSet?) {
         attrs?.let {
-            val ta = context.obtainStyledAttributes(attrs, R.styleable.fly_uikit_RoundView)
+            val ta = context.obtainStyledAttributes(attrs, R.styleable.lib_uikit_RoundView)
             initRoundAttrs(ta)
             normalTextColor = ta.getColor(
-                R.styleable.fly_uikit_RoundView_fu_disabledBgColor,
+                R.styleable.lib_uikit_RoundView_fu_disabledBgColor,
                 normalTextColor
             )
             disabledTextColor = ta.getColor(
-                R.styleable.fly_uikit_RoundView_fu_disabledBgColor,
+                R.styleable.lib_uikit_RoundView_fu_disabledBgColor,
                 RHelper.INVALID_COLOR
             )
             if (disabledTextColor == RHelper.INVALID_COLOR) {

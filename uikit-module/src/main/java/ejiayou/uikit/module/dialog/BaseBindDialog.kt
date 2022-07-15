@@ -7,9 +7,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/6/28 7:45 PM
  * @description: 带有DataBinding的Dialog基类
  * @since: 1.0.0
  */

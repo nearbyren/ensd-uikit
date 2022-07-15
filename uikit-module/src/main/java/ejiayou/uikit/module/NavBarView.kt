@@ -6,9 +6,6 @@ import android.util.AttributeSet
 import android.view.View
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/7/9 2:46 PM
  * @description: 与底部导航栏高度一致的View
  * @since: 1.0.0
  */
