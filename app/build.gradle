@@ -40,6 +40,6 @@ dependencies {
     androidTestImplementation Testing.androidJunit
     androidTestImplementation Testing.espresso
     implementation AndroidX.coreKtx
-    implementation AndroidX.appcompat
-    implementation Google.material
+    api AndroidX.appcompat
+    api Google.material
 }
