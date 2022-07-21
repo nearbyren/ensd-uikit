@@ -1,9 +1,6 @@
 package ejiayou.uikit.module.round
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/30 10:23 下午
  * @description: 圆角相关属性
  * @since: 1.0.0
  */

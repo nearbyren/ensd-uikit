@@ -5,9 +5,6 @@ import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/9/6 7:48 下午
  * @description: Dialog相关扩展
  * <p>
  * 1、DialogFragment是继承于Fragment，在内部创建了一个Dialog对象

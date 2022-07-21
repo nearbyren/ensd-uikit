@@ -7,9 +7,6 @@ import android.widget.LinearLayout
 import ejiayou.uikit.module.R
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/30 7:52 下午
  * @description: 圆角LinearLayout
  * @since: 1.0.0
  */
@@ -40,7 +37,7 @@ open class RoundLinearLayout : LinearLayout, IRoundImpl {
     @SuppressLint("CustomViewStyleable")
     private fun initAttrs(attrs: AttributeSet?) {
         attrs?.let {
-            val ta = context.obtainStyledAttributes(attrs, R.styleable.fly_uikit_RoundView)
+            val ta = context.obtainStyledAttributes(attrs, R.styleable.lib_uikit_RoundView)
             initRoundAttrs(ta)
             ta.recycle()
         }

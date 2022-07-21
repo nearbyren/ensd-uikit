@@ -8,9 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/11/4 10:12 PM
  * @description: RecyclerView分割线
  * @since: 1.0.0
  */

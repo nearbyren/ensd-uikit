@@ -6,9 +6,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/5/30 10:25 PM
  * @description: 基于DataBinding的RecyclerView Adapter封装
  * @since: 1.0.0
  */

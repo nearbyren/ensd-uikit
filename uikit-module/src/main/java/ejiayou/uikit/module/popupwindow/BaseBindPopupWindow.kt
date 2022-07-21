@@ -6,9 +6,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/6/29 10:21 AM
  * @description: 带有DataBinding的PopupWindow基类
  * @since: 1.0.0
  */

@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 /**
- * A {@link RecyclerView.OnScrollListener} which helps {@link OverFlyingLayoutManager}
+ * A {@link RecyclerView.OnScrollListener} which helps {@link OveringLayoutManager}
  * to center the current position
  */
 public class CenterScrollListener extends RecyclerView.OnScrollListener {
@@ -16,7 +16,7 @@ public class CenterScrollListener extends RecyclerView.OnScrollListener {
         super.onScrollStateChanged(recyclerView, newState);
         final RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
 
-        final OnPageChangeListener onPageChangeListener = ((OverFlyingLayoutManager) layoutManager).onPageChangeListener;
+        final OnPageChangeListener onPageChangeListener = ((OveringLayoutManager) layoutManager).onPageChangeListener;
         if (onPageChangeListener != null) {
             onPageChangeListener.onPageScrollStateChanged(newState);
         }
@@ -24,21 +24,21 @@ public class CenterScrollListener extends RecyclerView.OnScrollListener {
         if (newState == RecyclerView.SCROLL_STATE_IDLE) {
             if (mAutoSet) {
                 if (onPageChangeListener != null) {
-                    onPageChangeListener.onPageSelected(((OverFlyingLayoutManager) layoutManager).getCurrentPosition());
+                    onPageChangeListener.onPageSelected(((OveringLayoutManager) layoutManager).getCurrentPosition());
                 }
                 mAutoSet = false;
             } else {
                 final int delta;
-                delta = ((OverFlyingLayoutManager) layoutManager).getOffsetToCenter();
+                delta = ((OveringLayoutManager) layoutManager).getOffsetToCenter();
                 if (delta != 0) {
-                    if (((OverFlyingLayoutManager) layoutManager).getOrientation() == OverFlyingLayoutManager.VERTICAL)
+                    if (((OveringLayoutManager) layoutManager).getOrientation() == OveringLayoutManager.VERTICAL)
                         recyclerView.smoothScrollBy(0, delta);
                     else
                         recyclerView.smoothScrollBy(delta, 0);
                     mAutoSet = true;
                 } else {
                     if (onPageChangeListener != null) {
-                        onPageChangeListener.onPageSelected(((OverFlyingLayoutManager) layoutManager).getCurrentPosition());
+                        onPageChangeListener.onPageSelected(((OveringLayoutManager) layoutManager).getCurrentPosition());
                     }
                     mAutoSet = false;
                 }

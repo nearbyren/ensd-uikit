@@ -6,9 +6,6 @@ import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/5/30 9:20 PM
  * @description: RecyclerView Adapter封装
  * @since: 1.0.0
  */

@@ -6,9 +6,6 @@ import androidx.annotation.IdRes
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/5/30 10:09 PM
  * @description: ViewHolder的基类
  * @since: 1.0.0
  */

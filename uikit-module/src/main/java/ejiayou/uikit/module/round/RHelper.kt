@@ -8,9 +8,6 @@ import android.view.View
 import ejiayou.uikit.module.R
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/8/30 7:57 下午
  * @description: 圆角工具类，基于重新设置GradientDrawable实现；
  *               不使用canvas.clipPath()，因为在数据量大时，此方法比较消耗资源，容易卡顿；
  *               关于ImageView的圆角状态建议直接使用Glide或者其他图片加载工具实现
@@ -39,27 +36,27 @@ class RHelper(private val view: View) : IRound {
 
     fun initAttrs(ta: TypedArray) {
         topLeftRadius = ta.getDimension(
-            R.styleable.fly_uikit_RoundView_fu_topLeftRadius,
+            R.styleable.lib_uikit_RoundView_fu_topLeftRadius,
             NO_CORNER
         )
 
         topRightRadius = ta.getDimension(
-            R.styleable.fly_uikit_RoundView_fu_topRightRadius,
+            R.styleable.lib_uikit_RoundView_fu_topRightRadius,
             NO_CORNER
         )
 
         bottomLeftRadius = ta.getDimension(
-            R.styleable.fly_uikit_RoundView_fu_bottomLeftRadius,
+            R.styleable.lib_uikit_RoundView_fu_bottomLeftRadius,
             NO_CORNER
         )
 
         bottomRightRadius = ta.getDimension(
-            R.styleable.fly_uikit_RoundView_fu_bottomRightRadius,
+            R.styleable.lib_uikit_RoundView_fu_bottomRightRadius,
             NO_CORNER
         )
 
         val radius = ta.getDimension(
-            R.styleable.fly_uikit_RoundView_fu_radius,
+            R.styleable.lib_uikit_RoundView_fu_radius,
             -1f
         )
         if (radius != -1f) {
@@ -67,37 +64,37 @@ class RHelper(private val view: View) : IRound {
         }
 
         normalBgColor = ta.getColor(
-            R.styleable.fly_uikit_RoundView_fu_normalBgColor,
+            R.styleable.lib_uikit_RoundView_fu_normalBgColor,
             Color.GRAY
         )
 
         disabledBgColor = ta.getColor(
-            R.styleable.fly_uikit_RoundView_fu_disabledBgColor,
+            R.styleable.lib_uikit_RoundView_fu_disabledBgColor,
             INVALID_COLOR
         )
 
         pressedBgColor = ta.getColor(
-            R.styleable.fly_uikit_RoundView_fu_pressedBgColor,
+            R.styleable.lib_uikit_RoundView_fu_pressedBgColor,
             INVALID_COLOR
         )
 
         borderWidth = ta.getDimension(
-            R.styleable.fly_uikit_RoundView_fu_borderWidth,
+            R.styleable.lib_uikit_RoundView_fu_borderWidth,
             0f
         ).toInt()
 
         normalBorderColor = ta.getColor(
-            R.styleable.fly_uikit_RoundView_fu_normalBorderColor,
+            R.styleable.lib_uikit_RoundView_fu_normalBorderColor,
             Color.TRANSPARENT
         )
 
         pressedBorderColor = ta.getColor(
-            R.styleable.fly_uikit_RoundView_fu_pressedBorderColor,
+            R.styleable.lib_uikit_RoundView_fu_pressedBorderColor,
             Color.TRANSPARENT
         )
 
         disabledBorderColor = ta.getColor(
-            R.styleable.fly_uikit_RoundView_fu_disabledBorderColor,
+            R.styleable.lib_uikit_RoundView_fu_disabledBorderColor,
             Color.TRANSPARENT
         )
     }

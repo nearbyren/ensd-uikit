@@ -42,7 +42,7 @@
     <!--=========================================================================================-->
 
     <!-- 自定义标题栏 -->
-    <declare-styleable name="fly_uikit_TitleBar">
+    <declare-styleable name="lib_uikit_TitleBar">
         <!--标题栏文字描述-->
         <attr name="fu_title" />
         <!--标题栏文字大小-->
@@ -98,7 +98,7 @@
     </declare-styleable>
 
     <!-- 自定义进度格控件 -->
-    <declare-styleable name="fly_uikit_LatticeView">
+    <declare-styleable name="lib_uikit_LatticeView">
         <attr name="fu_totalCount" format="integer" />
         <attr name="fu_accentCount" format="integer" />
         <attr name="fu_primaryColor" format="color|reference" />
@@ -110,7 +110,7 @@
     </declare-styleable>
 
     <!-- 带阴影的Layout -->
-    <declare-styleable name="fly_uikit_ShadowLayout">
+    <declare-styleable name="lib_uikit_ShadowLayout">
         <!--阴影的圆角弧度-->
         <attr name="fu_cornerRadius" format="dimension" />
         <!--阴影的半径-->
@@ -124,7 +124,7 @@
     </declare-styleable>
 
     <!-- 曲线图 -->
-    <declare-styleable name="fly_uikit_CurveChart">
+    <declare-styleable name="lib_uikit_CurveChart">
         <!--X轴的宽-->
         <attr name="fu_xAxisWidth" format="dimension" />
         <!--X轴的颜色-->
@@ -172,7 +172,7 @@
     </declare-styleable>
 
     <!--多功能输入框-->
-    <declare-styleable name="fly_uikit_MultiEditText">
+    <declare-styleable name="lib_uikit_MultiEditText">
         <!--输入框的内容-->
         <attr name="fu_input" format="string|reference" />
         <!--输入框的ellipsize-->
@@ -275,7 +275,7 @@
     </declare-styleable>
 
     <!--Banner指示器-->
-    <declare-styleable name="fly_uikit_Indicator">
+    <declare-styleable name="lib_uikit_Indicator">
         <!--活动指示器的颜色-->
         <attr name="fu_activeColor" format="color|reference" />
         <!--非活动指示器的颜色-->
@@ -287,11 +287,11 @@
     </declare-styleable>
 
     <!--圆角View-->
-    <declare-styleable name="fly_uikit_RoundView">
+    <declare-styleable name="lib_uikit_RoundView">
         <attr name="fu_radius" />
         <attr name="fu_topLeftRadius" />
         <attr name="fu_topRightRadius" />
-        <attr name="fu_bottomLeftRadius" />
+    <attr name="fu_bottomLeftRadius" />
         <attr name="fu_bottomRightRadius" />
         <attr name="fu_normalBgColor" format="color|reference" />
         <attr name="fu_normalTextColor" format="color|reference" />
@@ -305,7 +305,7 @@
     </declare-styleable>
 
     <!--Radio ImageView-->
-    <declare-styleable name="fly_uikit_RadioImageView">
+    <declare-styleable name="lib_uikit_RadioImageView">
         <attr name="fu_checked" />
         <attr name="fu_checkSrc" format="reference" />
         <attr name="fu_uncheckSrc" format="reference" />

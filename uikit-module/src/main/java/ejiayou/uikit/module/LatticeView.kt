@@ -9,9 +9,6 @@ import android.util.AttributeSet
 import android.view.View
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/7/8 10:04 AM
  * @description: 格子控件
  * @since: 1.0.0
  */
@@ -48,21 +45,21 @@ open class LatticeView : View {
         paint.isAntiAlias = true
         paint.style = Paint.Style.FILL
         if (attrs != null) {
-            val ta = context.obtainStyledAttributes(attrs, R.styleable.fly_uikit_LatticeView)
+            val ta = context.obtainStyledAttributes(attrs, R.styleable.lib_uikit_LatticeView)
             primaryColor =
-                ta.getColor(R.styleable.fly_uikit_LatticeView_fu_primaryColor, primaryColor)
+                ta.getColor(R.styleable.lib_uikit_LatticeView_fu_primaryColor, primaryColor)
             accentColor =
-                ta.getInteger(R.styleable.fly_uikit_LatticeView_fu_accentColor, accentColor)
-            totalCount = ta.getColor(R.styleable.fly_uikit_LatticeView_fu_totalCount, totalCount)
+                ta.getInteger(R.styleable.lib_uikit_LatticeView_fu_accentColor, accentColor)
+            totalCount = ta.getColor(R.styleable.lib_uikit_LatticeView_fu_totalCount, totalCount)
             accentCount =
-                ta.getInteger(R.styleable.fly_uikit_LatticeView_fu_accentCount, accentCount)
+                ta.getInteger(R.styleable.lib_uikit_LatticeView_fu_accentCount, accentCount)
             cellWidth =
-                ta.getDimension(R.styleable.fly_uikit_LatticeView_fu_cellWidth, cellWidth)
+                ta.getDimension(R.styleable.lib_uikit_LatticeView_fu_cellWidth, cellWidth)
             cellSpace =
-                ta.getDimension(R.styleable.fly_uikit_LatticeView_fu_cellSpace, cellSpace)
-            reverse = ta.getBoolean(R.styleable.fly_uikit_LatticeView_fu_reverse, reverse)
+                ta.getDimension(R.styleable.lib_uikit_LatticeView_fu_cellSpace, cellSpace)
+            reverse = ta.getBoolean(R.styleable.lib_uikit_LatticeView_fu_reverse, reverse)
             oritenation =
-                ta.getInteger(R.styleable.fly_uikit_LatticeView_fu_oritenation, oritenation)
+                ta.getInteger(R.styleable.lib_uikit_LatticeView_fu_oritenation, oritenation)
             ta.recycle()
         }
     }

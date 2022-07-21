@@ -11,9 +11,6 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/6/28 2:03 PM
  * @description: PopupWindow的基类
  * @since: 1.0.0
  */

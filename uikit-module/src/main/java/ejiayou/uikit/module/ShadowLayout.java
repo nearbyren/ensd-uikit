@@ -13,9 +13,6 @@ import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/10/19 5:10 PM
  * @description: 带阴影的控件
  * @since: 1.0.0
  */
@@ -56,16 +53,16 @@ public class ShadowLayout extends FrameLayout {
     }
 
     private void initAttrs(Context context, AttributeSet attrs) {
-        TypedArray attr = getTypedArray(context, attrs, R.styleable.fly_uikit_ShadowLayout);
+        TypedArray attr = getTypedArray(context, attrs, R.styleable.lib_uikit_ShadowLayout);
         if (attr == null) {
             return;
         }
         try {
-            mShadowColor = attr.getColor(R.styleable.fly_uikit_ShadowLayout_fu_shadowColor, Color.parseColor(SHADOW_COLOR));
-            mShadowRadius = attr.getDimension(R.styleable.fly_uikit_ShadowLayout_fu_shadowRadius, CORNER_RADIUS);
-            mCornerRadius = attr.getDimension(R.styleable.fly_uikit_ShadowLayout_fu_cornerRadius, SHADOW_RADIUS);
-            mDx = attr.getDimension(R.styleable.fly_uikit_ShadowLayout_fu_dx, 0);
-            mDy = attr.getDimension(R.styleable.fly_uikit_ShadowLayout_fu_dy, 0);
+            mShadowColor = attr.getColor(R.styleable.lib_uikit_ShadowLayout_fu_shadowColor, Color.parseColor(SHADOW_COLOR));
+            mShadowRadius = attr.getDimension(R.styleable.lib_uikit_ShadowLayout_fu_shadowRadius, CORNER_RADIUS);
+            mCornerRadius = attr.getDimension(R.styleable.lib_uikit_ShadowLayout_fu_cornerRadius, SHADOW_RADIUS);
+            mDx = attr.getDimension(R.styleable.lib_uikit_ShadowLayout_fu_dx, 0);
+            mDy = attr.getDimension(R.styleable.lib_uikit_ShadowLayout_fu_dy, 0);
         } catch (Exception e) {
             // do nothing
         } finally {

@@ -23,9 +23,6 @@ import android.widget.TextView
 
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/4/21 11:52 AM
  * @description: 多功能输入框
  * @since: 1.0.0
  */
@@ -154,151 +151,151 @@ open class MultiEditText : LinearLayout {
     }
 
     private fun initDefaultValue(context: Context) {
-        clearIcon = R.drawable.fly_uikit_ic_edittext_clear.toDrawable(context)!!
-        openEyeIcon = R.drawable.fly_uikit_ic_edittext_eye_close.toDrawable(context)!!
-        closeEyeIcon = R.drawable.fly_uikit_ic_edittext_eye_close.toDrawable(context)!!
+        clearIcon = R.drawable.lib_uikit_ic_edittext_clear.toDrawable(context)!!
+        openEyeIcon = R.drawable.lib_uikit_ic_edittext_eye_close.toDrawable(context)!!
+        closeEyeIcon = R.drawable.lib_uikit_ic_edittext_eye_close.toDrawable(context)!!
     }
 
     private fun initAttr(attrs: AttributeSet?) {
         if (attrs != null) {
-            val ta = context.obtainStyledAttributes(attrs, R.styleable.fly_uikit_MultiEditText)
+            val ta = context.obtainStyledAttributes(attrs, R.styleable.lib_uikit_MultiEditText)
             // 输入框
-            input = ta.getString(R.styleable.fly_uikit_MultiEditText_fu_input) ?: ""
-            inputHint = ta.getString(R.styleable.fly_uikit_MultiEditText_fu_inputHint) ?: ""
+            input = ta.getString(R.styleable.lib_uikit_MultiEditText_fu_input) ?: ""
+            inputHint = ta.getString(R.styleable.lib_uikit_MultiEditText_fu_inputHint) ?: ""
             inputHintColor = ta.getColor(
-                R.styleable.fly_uikit_MultiEditText_fu_inputHintColor,
+                R.styleable.lib_uikit_MultiEditText_fu_inputHintColor,
                 inputHintColor
             )
             inputMaxLength =
-                ta.getInt(R.styleable.fly_uikit_MultiEditText_fu_inputMaxLength, inputMaxLength)
+                ta.getInt(R.styleable.lib_uikit_MultiEditText_fu_inputMaxLength, inputMaxLength)
             inputMaxLines =
-                ta.getInt(R.styleable.fly_uikit_MultiEditText_fu_inputMaxLines, inputMaxLines)
+                ta.getInt(R.styleable.lib_uikit_MultiEditText_fu_inputMaxLines, inputMaxLines)
             inputEllipsize =
-                ta.getInt(R.styleable.fly_uikit_MultiEditText_fu_inputEllipsize, inputEllipsize)
+                ta.getInt(R.styleable.lib_uikit_MultiEditText_fu_inputEllipsize, inputEllipsize)
             inputTextSize = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_inputTextSize,
+                R.styleable.lib_uikit_MultiEditText_fu_inputTextSize,
                 inputTextSize
             )
             inputTextColor = ta.getColor(
-                R.styleable.fly_uikit_MultiEditText_fu_inputTextColor,
+                R.styleable.lib_uikit_MultiEditText_fu_inputTextColor,
                 inputTextColor
             )
             inputPaddingLeft = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_inputPaddingL,
+                R.styleable.lib_uikit_MultiEditText_fu_inputPaddingL,
                 inputPaddingLeft
             )
             inputPaddingTop = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_inputPaddingT,
+                R.styleable.lib_uikit_MultiEditText_fu_inputPaddingT,
                 inputPaddingTop
             )
             inputPaddingRight = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_inputPaddingR,
+                R.styleable.lib_uikit_MultiEditText_fu_inputPaddingR,
                 inputPaddingRight
             )
             inputPaddingBottom = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_inputPaddingB,
+                R.styleable.lib_uikit_MultiEditText_fu_inputPaddingB,
                 inputPaddingBottom
             )
             inputMarginRight = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_inputMarginR,
+                R.styleable.lib_uikit_MultiEditText_fu_inputMarginR,
                 inputMarginRight
             )
             inputHeight = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_inputHeight,
+                R.styleable.lib_uikit_MultiEditText_fu_inputHeight,
                 inputHeight.toFloat()
             ).toInt()
             inputFocusBg =
-                ta.getDrawable(R.styleable.fly_uikit_MultiEditText_fu_inputFocusBg)
+                ta.getDrawable(R.styleable.lib_uikit_MultiEditText_fu_inputFocusBg)
                     ?: inputFocusBg
             inputUnFocusBg =
-                ta.getDrawable(R.styleable.fly_uikit_MultiEditText_fu_inputUnFocusBg)
+                ta.getDrawable(R.styleable.lib_uikit_MultiEditText_fu_inputUnFocusBg)
                     ?: inputUnFocusBg
-            inputType = ta.getInt(R.styleable.fly_uikit_MultiEditText_fu_inputType, inputType)
+            inputType = ta.getInt(R.styleable.lib_uikit_MultiEditText_fu_inputType, inputType)
 
             // 密码可见icon
             showEyeIcon =
-                ta.getBoolean(R.styleable.fly_uikit_MultiEditText_fu_showPwdIcon, showEyeIcon)
-            openEyeIcon = ta.getDrawable(R.styleable.fly_uikit_MultiEditText_fu_pwdIcon_open)
+                ta.getBoolean(R.styleable.lib_uikit_MultiEditText_fu_showPwdIcon, showEyeIcon)
+            openEyeIcon = ta.getDrawable(R.styleable.lib_uikit_MultiEditText_fu_pwdIcon_open)
                 ?: openEyeIcon
-            closeEyeIcon = ta.getDrawable(R.styleable.fly_uikit_MultiEditText_fu_pwdIcon_close)
+            closeEyeIcon = ta.getDrawable(R.styleable.lib_uikit_MultiEditText_fu_pwdIcon_close)
                 ?: closeEyeIcon
             pwdEyeWidth = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_pwdIconWidth,
+                R.styleable.lib_uikit_MultiEditText_fu_pwdIconWidth,
                 pwdEyeWidth.toFloat()
             ).toInt()
             pwdEyeHeight = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_pwdIconHeight,
+                R.styleable.lib_uikit_MultiEditText_fu_pwdIconHeight,
                 pwdEyeHeight.toFloat()
             ).toInt()
             isPwdVisible = ta.getBoolean(
-                R.styleable.fly_uikit_MultiEditText_fu_pwdVisible,
+                R.styleable.lib_uikit_MultiEditText_fu_pwdVisible,
                 isPwdVisible
             )
 
             // 清除icon
             showClearIcon =
-                ta.getBoolean(R.styleable.fly_uikit_MultiEditText_fu_showClearIcon, showClearIcon)
+                ta.getBoolean(R.styleable.lib_uikit_MultiEditText_fu_showClearIcon, showClearIcon)
             clearIcon =
-                ta.getDrawable(R.styleable.fly_uikit_MultiEditText_fu_clearIcon) ?: clearIcon
+                ta.getDrawable(R.styleable.lib_uikit_MultiEditText_fu_clearIcon) ?: clearIcon
             clearWidth = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_clearIconWidth,
+                R.styleable.lib_uikit_MultiEditText_fu_clearIconWidth,
                 clearWidth.toFloat()
             ).toInt()
             clearHeight = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_clearIconHeight,
+                R.styleable.lib_uikit_MultiEditText_fu_clearIconHeight,
                 clearHeight.toFloat()
             ).toInt()
 
             // 左侧icon
             showLeftIcon =
-                ta.getBoolean(R.styleable.fly_uikit_MultiEditText_fu_showLeftIcon, showLeftIcon)
-            leftIcon = ta.getDrawable(R.styleable.fly_uikit_MultiEditText_fu_leftIcon)
+                ta.getBoolean(R.styleable.lib_uikit_MultiEditText_fu_showLeftIcon, showLeftIcon)
+            leftIcon = ta.getDrawable(R.styleable.lib_uikit_MultiEditText_fu_leftIcon)
             leftIconWidth = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_leftIconWidth,
+                R.styleable.lib_uikit_MultiEditText_fu_leftIconWidth,
                 leftIconWidth.toFloat()
             ).toInt()
             leftIconHeight = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_leftIconHeight,
+                R.styleable.lib_uikit_MultiEditText_fu_leftIconHeight,
                 leftIconHeight.toFloat()
             ).toInt()
             leftIconMarginRight = ta.getDimension(
-                R.styleable.fly_uikit_MultiEditText_fu_leftIconMarginR,
+                R.styleable.lib_uikit_MultiEditText_fu_leftIconMarginR,
                 leftIconMarginRight.toFloat()
             ).toInt()
 
             // 错误提示
             reserveErrorHeight =
                 ta.getBoolean(
-                    R.styleable.fly_uikit_MultiEditText_fu_reserve_errorHeight,
+                    R.styleable.lib_uikit_MultiEditText_fu_reserve_errorHeight,
                     reserveErrorHeight
                 )
-            error = ta.getString(R.styleable.fly_uikit_MultiEditText_fu_error) ?: "Error"
+            error = ta.getString(R.styleable.lib_uikit_MultiEditText_fu_error) ?: "Error"
             errorTextSize =
                 ta.getDimension(
-                    R.styleable.fly_uikit_MultiEditText_fu_errorTextSize,
+                    R.styleable.lib_uikit_MultiEditText_fu_errorTextSize,
                     errorTextSize
                 )
             errorTextColor =
-                ta.getColor(R.styleable.fly_uikit_MultiEditText_fu_errorTextColor, errorTextColor)
+                ta.getColor(R.styleable.lib_uikit_MultiEditText_fu_errorTextColor, errorTextColor)
             errorMarginTop =
                 ta.getDimension(
-                    R.styleable.fly_uikit_MultiEditText_fu_errorMarginT,
+                    R.styleable.lib_uikit_MultiEditText_fu_errorMarginT,
                     errorMarginTop.toFloat()
                 )
                     .toInt()
             errorMarginLeft =
                 ta.getDimension(
-                    R.styleable.fly_uikit_MultiEditText_fu_errorMarginL,
+                    R.styleable.lib_uikit_MultiEditText_fu_errorMarginL,
                     errorMarginLeft.toFloat()
                 ).toInt()
             errorMarginRight =
                 ta.getDimension(
-                    R.styleable.fly_uikit_MultiEditText_fu_errorMarginR,
+                    R.styleable.lib_uikit_MultiEditText_fu_errorMarginR,
                     errorMarginRight.toFloat()
                 ).toInt()
             errorHeight =
                 ta.getDimension(
-                    R.styleable.fly_uikit_MultiEditText_fu_errorHeight,
+                    R.styleable.lib_uikit_MultiEditText_fu_errorHeight,
                     errorHeight.toFloat()
                 ).toInt()
             ta.recycle()

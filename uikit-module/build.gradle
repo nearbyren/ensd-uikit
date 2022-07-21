@@ -1,6 +1,6 @@
 import ejiayou.composing.builds.AndroidX
-import ejiayou.composing.builds.Google
 import ejiayou.composing.builds.ThirdLib
+import ejiayou.composing.builds.Google
 import ejiayou.composing.builds.Testing
 plugins {
     id 'com.android.library'
@@ -53,9 +53,10 @@ dependencies {
     androidTestImplementation Testing.androidJunit
     androidTestImplementation Testing.espresso
 
-    implementation ThirdLib.KotlinStdlib.kotlinStdlib
+    api ThirdLib.KotlinStdlib.kotlinStdlib
     api AndroidX.appcompat
     api AndroidX.recyclerView
     api AndroidX.lifecycleRuntimeKtx
     api AndroidX.databindingRuntime
+    api Google.material
 }

@@ -16,9 +16,6 @@ import kotlinx.coroutines.cancel
 
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2020/7/14 5:09 PM
  * @description: DialogFragment的基类
  * @since: 1.0.0
  */
@@ -37,7 +34,7 @@ abstract class BaseDialogFragment : AppCompatDialogFragment(), CoroutineScope by
         super.onCreate(savedInstanceState)
         setStyle(
             if (getDialogStyle() != null) getDialogStyle()!! else STYLE_NO_TITLE,
-            if (getDialogTheme() != null) getDialogTheme()!! else R.style.fly_uikit_CommonDialog
+            if (getDialogTheme() != null) getDialogTheme()!! else R.style.lib_uikit_CommonDialog
         )
     }
 

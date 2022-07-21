@@ -3,9 +3,6 @@ package ejiayou.uikit.module.round
 import android.content.res.TypedArray
 
 /**
- * @author: Albert Li
- * @contact: albertlii@163.com
- * @time: 2021/9/6 10:51 上午
  * @description: -
  * @since: 1.0.0
  */
