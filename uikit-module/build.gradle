@@ -54,8 +54,8 @@ dependencies {
     androidTestImplementation Testing.espresso
 
     implementation ThirdLib.KotlinStdlib.kotlinStdlib
-    implementation AndroidX.appcompat
-    implementation AndroidX.recyclerView
+    api AndroidX.appcompat
+    api AndroidX.recyclerView
     api AndroidX.lifecycleRuntimeKtx
     api AndroidX.databindingRuntime
 }
